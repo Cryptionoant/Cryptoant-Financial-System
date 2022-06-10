@@ -1,4 +1,4 @@
-# Cryptoant-Financial-Systen
+# Cryptoant-Financial-System
 
 ## project positioning
 
