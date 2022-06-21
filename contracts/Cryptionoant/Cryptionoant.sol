@@ -55,13 +55,11 @@ contract Cryptoant{
         require(msg.sender == list[_tokenId].owner);
         require(msg.sender != _to);
         _tokenApprovals[_tokenId] = _to;
-
     }
     function getApproved(uint256 tokenId) public view  returns (address) {
         require(_exists(tokenId), "ERC721: approved query for nonexistent token");
         return _tokenApprovals[tokenId];
     }
-
      function _exists(uint256 tokenId) public view  returns (bool) {
         return list[tokenId].owner != address(0);
     }
