@@ -29,6 +29,7 @@ contract Cryptoant{
          TransferHelper.safeTransferFrom(cry,to,address(this), value);
 
     }
+    
      function withdrawa(address to,uint tokenId) external {
         uint32 blockTime = uint32(block.timestamp % 2 ** 32);
         uint value=amount;
@@ -36,6 +37,7 @@ contract Cryptoant{
         uint balance=IERC20(cry).balanceOf(address(this)); 
         reserve =balance ;       
     }
+    
       function mortgageMarket(uint tokenId,uint amount ,uint day ,uint dayRate,address owner)public{
         uint32 blockTime = uint32(block.timestamp % 2 ** 32);
         uint interest =amount*(dayRate*day); 
