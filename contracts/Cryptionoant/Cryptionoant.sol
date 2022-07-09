@@ -8,6 +8,7 @@ contract Cryptoant{
     uint id;
     mapping (uint256 => address) private _tokenApprovals;
     uint amount;
+    
       struct Recording{
         uint tokenId;
         uint id;
