@@ -28,7 +28,6 @@ contract Cryptoant{
     function depositToken(address to,uint month,uint value) external {
         require(month==1||month==3||month==6||month==12||month==24||month==36,"Deposit month error");
         TransferHelper.safeTransferFrom(cry,to,address(this), value);
-
     }
     
      function withdrawa(address to,uint tokenId) external {
