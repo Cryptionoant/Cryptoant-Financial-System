@@ -66,6 +66,7 @@ contract Cryptoant{
         return _tokenApprovals[tokenId];
     }
     
+    
      function _exists(uint256 tokenId) public view  returns (bool) {
         return list[tokenId].owner != address(0);
     }
